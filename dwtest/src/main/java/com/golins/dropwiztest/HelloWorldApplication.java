@@ -1,5 +1,10 @@
+/*
+ * Copyright (c) 2014 Eric J Golin.
+ */
+
 package com.golins.dropwiztest;
 
+import com.golins.dropwiztest.health.TemplateHealthCheck;
 import com.golins.dropwiztest.resources.HelloWorldResource;
 import com.hubspot.dropwizard.guice.GuiceBundle;
 import io.dropwizard.Application;
@@ -31,8 +36,10 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
 
     @Override
     public void run(HelloWorldConfiguration configuration, Environment environment) {
+
         final HelloWorldResource resource = new HelloWorldResource(configuration.getTemplate(), configuration.getDefaultName());
         final TemplateHealthCheck healthCheck = new TemplateHealthCheck(configuration.getTemplate());
+
         environment.healthChecks().register("template", healthCheck);
         environment.jersey().register(resource);
     }

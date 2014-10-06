@@ -1,0 +1,11 @@
+template: Hello, %s!
+defaultName: Stranger
+
+# Logging settings
+logging:
+  # default logging level
+  level: DEBUG
+
+  # logger specific levels
+  loggers:
+    Saying: ALL

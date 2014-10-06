@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2014 Eric J Golin.
+ */
+
 package com.golins.dropwiztest;
 
 import com.google.inject.AbstractModule;

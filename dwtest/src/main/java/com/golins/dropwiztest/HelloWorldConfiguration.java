@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2014 Eric J Golin.
+ */
+
 /**
  * Created by egolin on 9/10/14.
  */

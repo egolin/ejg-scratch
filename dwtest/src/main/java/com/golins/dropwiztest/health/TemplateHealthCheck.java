@@ -1,4 +1,8 @@
-package com.golins.dropwiztest;
+/*
+ * Copyright (c) 2014 Eric J Golin.
+ */
+
+package com.golins.dropwiztest.health;
 
 import com.codahale.metrics.health.HealthCheck;
 
